@@ -1,4 +1,4 @@
-module trimmed_mean
+module github.com/ejones77/trimmed_mean
 
 go 1.22.0
 

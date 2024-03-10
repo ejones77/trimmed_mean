@@ -1,5 +1,7 @@
 # go_trimmed_mean
 
+Submitted assignment for Northwestern MSDS 431
+
 A Go package to calculate trimmed mean
 
 ## Overview
