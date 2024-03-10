@@ -14,3 +14,9 @@ func TestTrimmedMean(t *testing.T) {
 	assert.Nil(t, err)
 	assert.Equal(t, expected, result)
 }
+
+func BenchmarkEvaluate(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Evaluate()
+	}
+}
