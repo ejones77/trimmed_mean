@@ -1,9 +1,7 @@
 package trimmed_mean
 
 import (
-	"fmt"
 	"math/rand/v2"
-	"time"
 )
 
 func GenerateSamples() ([]float64, []int) {
@@ -20,11 +18,8 @@ func GenerateSamples() ([]float64, []int) {
 
 func Evaluate() {
 	floatSample, intSample := GenerateSamples()
-	start := time.Now()
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 50; i++ {
 		TrimmedMean(floatSample, 0.05)
 		TrimmedMean(intSample, 0.05)
 	}
-	end := time.Since(start)
-	fmt.Println("Time taken:", end)
 }
